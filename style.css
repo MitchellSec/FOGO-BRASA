@@ -1,0 +1,26 @@
+/* Definição de Variáveis de Cores Personalizadas para a Steakhouse */
+:root {
+  --color-dark-meat: #121316;
+  --color-accent-gold: #d4af37;
+  --color-light-cream: #f9f6f0;
+  --color-blood-red: #8b0000;
+}
+
+/* Utilitários de Cores Customizados via CSS puro (para complementar o Tailwind) */
+.bg-darkMeat { background-color: var(--color-dark-meat); }
+.text-accentGold { color: var(--color-accent-gold); }
+.border-accentGold { border-color: var(--color-accent-gold); }
+.bg-accentGold { background-color: var(--color-accent-gold); }
+.text-lightCream { color: var(--color-light-cream); }
+.bg-bloodRed { background-color: var(--color-blood-red); }
+
+/* Suavização de rolagem e ajustes visuais globais */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-dark-meat);
+  color: var(--color-light-cream);
+  overflow-x: hidden;
+}

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#08090b">
+    <meta name="description" content="Fogo & Brasa Steakhouse — Cortes Nobres, Maturação Especial e Parrilla Artesanal.">
+    
+    <title>Fogo & Brasa Steakhouse — A verdadeira arte da brasa</title>
+
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Conexão com o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-darkMeat text-lightCream font-sans selection:bg-accentGold selection:text-darkMeat">
+
+    <!-- HEADER / NAVEGAÇÃO -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-darkMeat/95 backdrop-blur border-b border-accentGold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl font-bold tracking-wider text-accentGold">
+                FOGO & BRASA <span class="text-xs block tracking-widest text-lightCream/70 font-sans">STEAKHOUSE</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#conceito" class="hover:text-accentGold transition">O Conceito</a>
+                <a href="#combos" class="hover:text-accentGold transition">Combos & Experiências</a>
+                <a href="#cortes" class="hover:text-accentGold transition">Cortes Nobres</a>
+                <a href="#ambientes" class="hover:text-accentGold transition">Ambientes</a>
+                <a href="#contato" class="hover:text-accentGold transition">Localização</a>
+            </nav>
+
+            <a href="#reserva" class="bg-bloodRed hover:bg-red-700 text-white px-5 py-2.5 rounded text-sm font-semibold tracking-wide transition shadow-lg">
+                Reservar Mesa
+            </a>
+        </div>
+    </header>
+
+    <!-- BANNER / HERO SECTION -->
+    <section class="relative h-screen flex items-center justify-center text-center px-4 bg-[url('https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1920')] bg-cover bg-center">
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="relative z-10 max-w-3xl mx-auto mt-20">
+            <span class="text-accentGold uppercase tracking-widest text-sm font-semibold mb-3 block">A verdadeira arte da brasa</span>
+            <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 text-lightCream leading-tight">
+                Cortes Nobres e Sabor Inconfundível
+            </h1>
+            <p class="text-lg sm:text-xl text-lightCream/80 mb-10 font-light">
+                Maturação especial, fogo vivo e uma experiência gastronômica memorável no coração da cidade.
+            </p>
+            
+            <!-- BARRA DE RESERVA RÁPIDA -->
+            <div id="reserva" class="bg-darkMeat/90 border border-accentGold/30 p-4 sm:p-6 rounded-lg backdrop-blur shadow-2xl max-w-2xl mx-auto">
+                <form id="reservation-form" class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-accentGold mb-1 font-semibold">Data</label>
+                        <input type="date" class="w-full bg-black/50 border border-lightCream/20 rounded p-2 text-sm text-lightCream focus:outline-none focus:border-accentGold">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-accentGold mb-1 font-semibold">Pessoas</label>
+                        <select class="w-full bg-black/50 border border-lightCream/20 rounded p-2 text-sm text-lightCream focus:outline-none focus:border-accentGold">
+                            <option>1 a 2 Pessoas</option>
+                            <option>3 a 4 Pessoas</option>
+                            <option>5 a 8 Pessoas (Grupo)</option>
+                        </select>
+                    </div>
+                    <div class="flex items-end">
+                        <button type="submit" class="w-full bg-accentGold hover:bg-yellow-600 text-darkMeat font-bold py-2.5 rounded text-sm transition tracking-wide uppercase cursor-pointer">
+                            Consultar Mesa
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONCEITO -->
+    <section id="conceito" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-accentGold uppercase tracking-widest text-sm font-semibold block mb-2">Tradição & Paixão</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-6 text-lightCream">
+                    Mais que um restaurante, uma celebração ao fogo.
+                </h2>
+                <p class="text-lightCream/80 mb-4 leading-relaxed">
+                    Fundada com a missão de resgatar o verdadeiro sabor da carne artesanal, a <strong class="text-accentGold">Fogo & Brasa</strong> une técnicas ancestrais de parrilla argentina com cortes selecionados das melhores raças do mundo.
+                </p>
+                <p class="text-lightCream/80 mb-6 leading-relaxed">
+                    Cada peça passa por um rigoroso processo de seleção e maturação, garantindo maciez incomparável e suculência a cada mordida.
+                </p>
+                <div class="grid grid-cols-3 gap-4 pt-4 border-t border-lightCream/10 text-center">
+                    <div>
+                        <span class="font-serif text-3xl font-bold text-accentGold block">45 Dias</span>
+                        <span class="text-xs text-lightCream/70 uppercase">Dry Aged</span>
+                    </div>
+                    <div>
+                        <span class="font-serif text-3xl font-bold text-accentGold block">100%</span>
+                        <span class="text-xs text-lightCream/70 uppercase">Carne Angus Certificada</span>
+                    </div>
+                    <div>
+                        <span class="font-serif text-3xl font-bold text-accentGold block">12h</span>
+                        <span class="text-xs text-lightCream/70 uppercase">Fogo de Chão</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=800" alt="Corte de carne na brasa" class="rounded-lg shadow-xl object-cover h-64 w-full">
+                <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?q=80&w=800" alt="Steakhouse ambiente" class="rounded-lg shadow-xl object-cover h-64 w-full mt-8">
+            </div>
+        </div>
+    </section>
+
+    <!-- COMBOS & EXPERIÊNCIAS -->
+    <section id="combos" class="bg-black/40 py-20 px-4 sm:px-6 lg:px-8 border-y border-accentGold/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-accentGold uppercase tracking-widest text-sm font-semibold block mb-2">Seleção do Chef</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Combos & Experiências</h2>
+                <p class="text-lightCream/70">Projetados para proporcionar uma viagem completa pelos sabores da nossa parrilla em grupos ou casais.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Combo 1 -->
+                <div class="bg-darkMeat border border-accentGold/20 rounded-lg p-6 flex flex-col justify-between hover:border-accentGold transition">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=600" alt="Combo Família" class="rounded-lg h-48 w-full object-cover mb-6">
+                        <span class="text-xs bg-bloodRed text-white px-2.5 py-1 rounded uppercase font-semibold">Para até 4 pessoas</span>
+                        <h3 class="font-serif text-2xl font-bold mt-4 mb-2">Combo Parrilla Família</h3>
+                        <p class="text-lightCream/70 text-sm mb-6">
+                            Composto por Ancho Premium, Chorizo, Costela de Chão (12h), linguiça artesanal de javali, acompanhado de farofa crocante, batatas rústicas e chimichurri.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-lightCream/10">
+                        <span class="text-accentGold font-serif text-xl font-bold">R$ 389,00</span>
+                        <a href="#reserva" class="text-sm font-semibold text-white hover:text-accentGold transition">Reservar Combo →</a>
+                    </div>
+                </div>
+
+                <!-- Combo 2 -->
+                <div class="bg-darkMeat border border-accentGold/20 rounded-lg p-6 flex flex-col justify-between hover:border-accentGold transition">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600" alt="Experiência Dry Aged" class="rounded-lg h-48 w-full object-cover mb-6">
+                        <span class="text-xs bg-accentGold text-darkMeat px-2.5 py-1 rounded uppercase font-bold">Exclusivo Casal</span>
+                        <h3 class="font-serif text-2xl font-bold mt-4 mb-2">Experiência Dry Aged</h3>
+                        <p class="text-lightCream/70 text-sm mb-6">
+                            Corte nobre maturado a seco por 45 dias, acompanhado de purê de batata trufado artesanal, aspargos grelhados na manteiga de garrafa e taça de vinho reserva.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-lightCream/10">
+                        <span class="text-accentGold font-serif text-xl font-bold">R$ 289,00</span>
+                        <a href="#reserva" class="text-sm font-semibold text-white hover:text-accentGold transition">Reservar Combo →</a>
+                    </div>
+                </div>
+
+                <!-- Combo 3 -->
+                <div class="bg-darkMeat border border-accentGold/20 rounded-lg p-6 flex flex-col justify-between hover:border-accentGold transition">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=600" alt="Festival Angus" class="rounded-lg h-48 w-full object-cover mb-6">
+                        <span class="text-xs bg-bloodRed text-white px-2.5 py-1 rounded uppercase font-semibold">Menu em 4 Etapas</span>
+                        <h3 class="font-serif text-2xl font-bold mt-4 mb-2">Festival Angus</h3>
+                        <p class="text-lightCream/70 text-sm mb-6">
+                            Sequência completa com entradas de empanadas e linguiças, corte principal Angus à escolha do cliente, guarnições livres e sobremesa de brasa.
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-lightCream/10">
+                        <span class="text-accentGold font-serif text-xl font-bold">R$ 195,00 / pessoa</span>
+                        <a href="#reserva" class="text-sm font-semibold text-white hover:text-accentGold transition">Reservar Combo →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORTES NOBRES -->
+    <section id="cortes" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-accentGold uppercase tracking-widest text-sm font-semibold block mb-2">Qualidade Incomparável</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Nossos Cortes em Destaque</h2>
+            <p class="text-lightCream/70">Selecionados dos melhores frigoríficos com certificação de origem.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Item 1 -->
+            <div class="bg-black/50 border border-lightCream/10 rounded-lg overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1594041680534-e8c8cdebd659?q=80&w=500" alt="Tomahawk" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-5">
+                    <h3 class="font-serif font-bold text-xl mb-1 text-accentGold">Tomahawk Prime</h3>
+                    <p class="text-xs text-lightCream/60 mb-3">Corte imponente com osso longo e marmoreio excepcional.</p>
+                    <span class="font-bold text-lightCream">R$ 210,00</span>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="bg-black/50 border border-lightCream/10 rounded-lg overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=500" alt="Bife de Chorizo" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-5">
+                    <h3 class="font-serif font-bold text-xl mb-1 text-accentGold">Bife de Chorizo</h3>
+                    <p class="text-xs text-lightCream/60 mb-3">O clássico argentino com capa de gordura suculenta.</p>
+                    <span class="font-bold text-lightCream">R$ 135,00</span>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="bg-black/50 border border-lightCream/10 rounded-lg overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?q=80&w=500" alt="Wagyu" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-5">
+                    <h3 class="font-serif font-bold text-xl mb-1 text-accentGold">Wagyu A5</h3>
+                    <p class="text-xs text-lightCream/60 mb-3">O nível supremo de marmoreio e maciez no mundo.</p>
+                    <span class="font-bold text-lightCream">R$ 340,00</span>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="bg-black/50 border border-lightCream/10 rounded-lg overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=500" alt="Assado de Tira" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="p-5">
+                    <h3 class="font-serif font-bold text-xl mb-1 text-accentGold">Assado de Tira</h3>
+                    <p class="text-xs text-lightCream/60 mb-3">Corte transversal da costela riquíssimo em sabor.</p>
+                    <span class="font-bold text-lightCream">R$ 145,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AMBIENTES -->
+    <section id="ambientes" class="bg-black/40 py-20 px-4 sm:px-6 lg:px-8 border-y border-accentGold/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-accentGold uppercase tracking-widest text-sm font-semibold block mb-2">Espaços Exclusivos</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Conheça Nossos Ambientes</h2>
+                <p class="text-lightCream/70">Projetados para garantir conforto, sofisticação e uma atmosfera acolhedora.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative rounded-lg overflow-hidden group h-80">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=600" alt="Salão Principal" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkMeat via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <h3 class="font-serif text-2xl font-bold text-accentGold mb-1">Salão Principal</h3>
+                        <p class="text-xs text-lightCream/80">Climatizado e com vista direta para a parrilla aberta.</p>
+                    </div>
+                </div>
+                <div class="relative rounded-lg overflow-hidden group h-80">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=600" alt="Varanda do Fogo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkMeat via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <h3 class="font-serif text-2xl font-bold text-accentGold mb-1">Varanda do Fogo</h3>
+                        <p class="text-xs text-lightCream/80">Área aberta integrada ao verde e ao calor das chamas.</p>
+                    </div>
+                </div>
+                <div class="relative rounded-lg overflow-hidden group h-80">
+                    <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?q=80&w=600" alt="Espaço VIP" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-darkMeat via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <h3 class="font-serif text-2xl font-bold text-accentGold mb-1">Espaço VIP Privativo</h3>
+                        <p class="text-xs text-lightCream/80">Ideal para eventos corporativos e comemorações exclusivas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROVA SOCIAL / DEPOIMENTOS -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-accentGold uppercase tracking-widest text-sm font-semibold block mb-2">Avaliações</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">O que dizem nossos clientes</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-black/50 border border-accentGold/20 p-6 rounded-lg relative">
+                <span class="text-accentGold text-4xl font-serif absolute top-4 right-6">“</span>
+                <p class="text-lightCream/80 text-sm mb-6 italic">
+                    "A melhor carne que já comi na cidade! O corte Dry Aged estava no ponto perfeito, derretendo na boca. Atendimento impecável."
+                </p>
+                <div class="font-semibold text-accentGold text-sm">Carlos Eduardo S.</div>
+                <span class="text-xs text-lightCream/60">Google Reviews</span>
+            </div>
+
+            <div class="bg-black/50 border border-accentGold/20 p-6 rounded-lg relative">
+                <span class="text-accentGold text-4xl font-serif absolute top-4 right-6">“</span>
+                <p class="text-lightCream/80 text-sm mb-6 italic">
+                    "Ambiente super sofisticado e aconchegante. Pedimos o combo família e nos surpreendeu com a quantidade e qualidade. Recomendo muito!"
+                </p>
+                <div class="font-semibold text-accentGold text-sm">Mariana Costa</div>
+                <span class="text-xs text-lightCream/60">TripAdvisor</span>
+            </div>
+
+            <div class="bg-black/50 border border-accentGold/20 p-6 rounded-lg relative">
+                <span class="text-accentGold text-4xl font-serif absolute top-4 right-6">“</span>
+                <p class="text-lightCream/80 text-sm mb-6 italic">
+                    "Carta de vinhos excelente que harmoniza perfeitamente com as carnes nobres. Sem dúvidas, o meu restaurante favorito em carne."
+                </p>
+                <div class="font-semibold text-accentGold text-sm">Roberto Mendes</div>
+                <span class="text-xs text-lightCream/60">Google Reviews</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTATO -->
+    <footer id="contato" class="bg-black border-t border-accentGold/20 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div>
+                <a href="#" class="font-serif text-2xl font-bold tracking-wider text-accentGold mb-4 block">
+                    FOGO & BRASA
+                </a>
+                <p class="text-sm text-lightCream/70 mb-4">
+                    A excelência em carnes nobres e parrilla artesanal. Venha viver uma experiência única.
+                </p>
+                <div class="flex space-x-4 text-accentGold">
+                    <a href="#" class="hover:text-white transition">Instagram</a>
+                    <a href="#" class="hover:text-white transition">Facebook</a>
+                    <a href="#" class="hover:text-white transition">WhatsApp</a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-lg font-bold text-accentGold mb-4">Horário de Funcionamento</h4>
+                <p class="text-sm text-lightCream/70 mb-2">Terça a Quinta: 18h às 23h</p>
+                <p class="text-sm text-lightCream/70 mb-2">Sexta e Sábado: 12h à 00h</p>
+                <p class="text-sm text-lightCream/70">Domingo: 12h às 17h</p>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-lg font-bold text-accentGold mb-4">Contato & Endereço</h4>
+                <p class="text-sm text-lightCream/70 mb-2">Av. dos Gastrônomos, 1000 - Centro</p>
+                <p class="text-sm text-lightCream/70 mb-2">Telefone: (17) 99888-7766</p>
+                <p class="text-sm text-lightCream/70">contato@fogoebrasa.com.br</p>
+            </div>
+
+            <div>
+                <h4 class="font-serif text-lg font-bold text-accentGroup text-accentGold mb-4">Newsletter</h4>
+                <p class="text-sm text-lightCream/70 mb-4">Receba convites para eventos exclusivos e festivais de carne.</p>
+                <form id="newsletter-form" class="flex">
+                    <input type="email" placeholder="Seu e-mail" class="bg-darkMeat border border-lightCream/20 rounded-l p-2 text-sm text-white w-full focus:outline-none focus:border-accentGold">
+                    <button type="submit" class="bg-accentGold text-darkMeat px-4 rounded-r font-bold text-sm cursor-pointer">Ok</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-lightCream/10 text-center text-xs text-lightCream/50">
+            © 2026 Fogo & Brasa Steakhouse. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Conexão com o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
